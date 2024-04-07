@@ -1,9 +1,10 @@
-import React from "react"
+import React from 'react'
+import Header from './Layout/Header.jsx'
 
 const App = () => {
     return (
         <>
-            <h1>React Investment Calculator</h1>
+            <Header/>
         </>
     )
 }
