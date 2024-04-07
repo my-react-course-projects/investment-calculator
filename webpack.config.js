@@ -20,7 +20,7 @@ const stylesHandler = isProduction ? MiniCssExtractPlugin.loader : 'style-loader
 class RunAfterCompile{
     apply(compiler) {
         compiler.hooks.done.tap('Copy images', () => {
-            fse.copySync(`./${sourceDir}/images`, `./${buildDir}/images`)
+            fse.copySync(`./${sourceDir}/assets/images`, `./${buildDir}/assets/images`)
         })
     }
 }
@@ -70,9 +70,9 @@ const config = {
         //     ]
         // }),
         new HtmlWebpackPlugin({
-            title: 'Update this accordingly...',
+            title: 'Investment Calculator',
             template: `./${sourceDir}/index.hbs`,
-            description: 'Some Description of your choice'
+            description: 'React based investment calculator'
         })
     ],
     optimization: {
