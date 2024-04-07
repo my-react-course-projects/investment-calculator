@@ -1,8 +1,8 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './scripts/App';
+import React from 'react'
+import { createRoot } from 'react-dom/client'
+import App from './components/App.jsx'
 
-import './styles/main.scss';
+import './styles/main.scss'
 
 if( process.env.NODE_ENV === 'production' ) {
    console.log('Production Mode');
