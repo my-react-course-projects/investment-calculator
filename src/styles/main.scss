@@ -8,12 +8,12 @@
 @import "base/utility";
 @import "base/animation";
 
-@import "components/button";
+@import "components/common/button";
+@import "components/common/input";
 
-
-@import "layout/main";
 @import "layout/grid";
 @import "layout/header";
+@import "layout/main";
 @import "layout/footer";
 
 @import "pages/home";
