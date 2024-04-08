@@ -12,13 +12,13 @@ const App = () => {
             <Main>
                 <Section id='user-input'>
                     <UList className='input-group'>
-                        <Input label='Initial Investment' type='number' required />
-                        <Input label='Annual Investment' type='number' required />
+                        <Input label='Initial Investment' identifier='initialInvestment' type='number' required />
+                        <Input label='Annual Investment' identifier='annualInvestment' type='number' required />
                     </UList>
 
                     <UList className='input-group'>
-                        <Input label='Expected Return' type='number' required />
-                        <Input label='Duration' type='number' required />
+                        <Input label='Expected Return' identifier='expectedReturn' type='number' required />
+                        <Input label='Duration' identifier='duration' type='number' required />
                     </UList>
                 </Section>
             </Main>
