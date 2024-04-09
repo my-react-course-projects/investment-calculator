@@ -381,6 +381,24 @@ if (true) {
 
 /***/ }),
 
+/***/ 251:
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+var f=__webpack_require__(294),k=Symbol.for("react.element"),l=Symbol.for("react.fragment"),m=Object.prototype.hasOwnProperty,n=f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,p={key:!0,ref:!0,__self:!0,__source:!0};
+function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&(e=""+a.key);void 0!==a.ref&&(h=a.ref);for(b in a)m.call(a,b)&&!p.hasOwnProperty(b)&&(d[b]=a[b]);if(c&&c.defaultProps)for(b in a=c.defaultProps,a)void 0===d[b]&&(d[b]=a[b]);return{$$typeof:k,type:c,key:e,ref:h,props:d,_owner:n.current}}exports.Fragment=l;exports.jsx=q;exports.jsxs=q;
+
+
+/***/ }),
+
 /***/ 408:
 /***/ ((__unused_webpack_module, exports) => {
 
@@ -421,6 +439,18 @@ exports.useTransition=function(){return U.current.useTransition()};exports.versi
 
 if (true) {
   module.exports = __webpack_require__(408);
+} else {}
+
+
+/***/ }),
+
+/***/ 893:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+if (true) {
+  module.exports = __webpack_require__(251);
 } else {}
 
 
@@ -537,23 +567,289 @@ var react = __webpack_require__(294);
 var client = __webpack_require__(745);
 ;// CONCATENATED MODULE: ./src/assets/images/logo.png
 const logo_namespaceObject = __webpack_require__.p + "c20da4d5b23f8d49ad00.png";
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+var jsx_runtime = __webpack_require__(893);
 ;// CONCATENATED MODULE: ./src/components/Layout/Header.jsx
 
 
+
+
 function Header() {
-  return /*#__PURE__*/react.createElement("header", null, /*#__PURE__*/react.createElement("img", {
-    src: logo_namespaceObject,
-    alt: "logo"
-  }), /*#__PURE__*/react.createElement("h1", null, "Investment Calculator"));
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)("header", {
+    id: "header",
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)("img", {
+      src: logo_namespaceObject,
+      alt: "logo"
+    }), /*#__PURE__*/(0,jsx_runtime.jsx)("h1", {
+      children: "Investment Calculator"
+    })]
+  });
+}
+;// CONCATENATED MODULE: ./src/components/Layout/Main.jsx
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+var _excluded = ["children"];
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+function Main(_ref) {
+  var children = _ref.children,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsx)("main", _objectSpread(_objectSpread({}, props), {}, {
+    children: children
+  }));
+}
+;// CONCATENATED MODULE: ./src/components/Common/Section.jsx
+function Section_typeof(o) { "@babel/helpers - typeof"; return Section_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Section_typeof(o); }
+var Section_excluded = ["children"];
+function Section_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function Section_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? Section_ownKeys(Object(t), !0).forEach(function (r) { Section_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Section_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function Section_defineProperty(obj, key, value) { key = Section_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function Section_toPropertyKey(t) { var i = Section_toPrimitive(t, "string"); return "symbol" == Section_typeof(i) ? i : String(i); }
+function Section_toPrimitive(t, r) { if ("object" != Section_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != Section_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function Section_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = Section_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function Section_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+function Section(_ref) {
+  var children = _ref.children,
+    props = Section_objectWithoutProperties(_ref, Section_excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsx)("section", Section_objectSpread(Section_objectSpread({}, props), {}, {
+    children: children
+  }));
+}
+;// CONCATENATED MODULE: ./src/components/Common/UList.jsx
+function UList_typeof(o) { "@babel/helpers - typeof"; return UList_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, UList_typeof(o); }
+var UList_excluded = ["children"];
+function UList_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function UList_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? UList_ownKeys(Object(t), !0).forEach(function (r) { UList_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : UList_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function UList_defineProperty(obj, key, value) { key = UList_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function UList_toPropertyKey(t) { var i = UList_toPrimitive(t, "string"); return "symbol" == UList_typeof(i) ? i : String(i); }
+function UList_toPrimitive(t, r) { if ("object" != UList_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != UList_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function UList_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = UList_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function UList_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+
+function UList(_ref) {
+  var children = _ref.children,
+    props = UList_objectWithoutProperties(_ref, UList_excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsx)("ul", UList_objectSpread(UList_objectSpread({}, props), {}, {
+    children: children
+  }));
+}
+;// CONCATENATED MODULE: ./src/components/Common/Input.jsx
+function Input_typeof(o) { "@babel/helpers - typeof"; return Input_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, Input_typeof(o); }
+var Input_excluded = ["label", "identifier", "onChange", "userInput"];
+function Input_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function Input_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? Input_ownKeys(Object(t), !0).forEach(function (r) { Input_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Input_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function Input_defineProperty(obj, key, value) { key = Input_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function Input_toPropertyKey(t) { var i = Input_toPrimitive(t, "string"); return "symbol" == Input_typeof(i) ? i : String(i); }
+function Input_toPrimitive(t, r) { if ("object" != Input_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != Input_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
+function Input_objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = Input_objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function Input_objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+function Input(_ref) {
+  var label = _ref.label,
+    identifier = _ref.identifier,
+    _onChange = _ref.onChange,
+    userInput = _ref.userInput,
+    props = Input_objectWithoutProperties(_ref, Input_excluded);
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)("li", {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)("label", {
+      children: label
+    }), /*#__PURE__*/(0,jsx_runtime.jsx)("input", Input_objectSpread(Input_objectSpread({}, props), {}, {
+      value: userInput[identifier],
+      onChange: function onChange(event) {
+        return _onChange(identifier, event.target.value);
+      }
+    }))]
+  });
+}
+;// CONCATENATED MODULE: ./src/util/investment.js
+// This function expects a JS object as an argument
+// The object should contain the following properties
+// - initialInvestment: The initial investment amount
+// - annualInvestment: The amount invested every year
+// - expectedReturn: The expected (annual) rate of return
+// - duration: The investment duration (time frame)
+function calculateInvestmentResults(_ref) {
+  var initialInvestment = _ref.initialInvestment,
+    annualInvestment = _ref.annualInvestment,
+    expectedReturn = _ref.expectedReturn,
+    duration = _ref.duration;
+  var annualData = [];
+  var investmentValue = initialInvestment;
+  for (var i = 0; i < duration; i++) {
+    var interestEarnedInYear = investmentValue * (expectedReturn / 100);
+    investmentValue += interestEarnedInYear + annualInvestment;
+    annualData.push({
+      year: i + 1,
+      // year identifier
+      interest: interestEarnedInYear,
+      // the amount of interest earned in this year
+      valueEndOfYear: investmentValue,
+      // investment value at end of year
+      annualInvestment: annualInvestment // investment added in this year
+    });
+  }
+  return annualData;
+}
+
+// The browser-provided Intl API is used to prepare a formatter object
+// This object offers a "format()" method that can be used to format numbers as currency
+// Example Usage: formatter.format(1000) => yields "$1,000"
+var formatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0
+});
+;// CONCATENATED MODULE: ./src/components/Results/Results.jsx
+
+
+
+
+function Results(_ref) {
+  var input = _ref.input;
+  var resultsData = calculateInvestmentResults(input);
+  var initialInvestment = resultsData[0].valueEndOfYear - resultsData[0].interest - resultsData[0].annualInvestment;
+  return /*#__PURE__*/(0,jsx_runtime.jsx)(jsx_runtime.Fragment, {
+    children: /*#__PURE__*/(0,jsx_runtime.jsxs)("table", {
+      id: "result",
+      children: [/*#__PURE__*/(0,jsx_runtime.jsx)("thead", {
+        children: /*#__PURE__*/(0,jsx_runtime.jsxs)("tr", {
+          children: [/*#__PURE__*/(0,jsx_runtime.jsx)("th", {
+            children: "Year"
+          }), /*#__PURE__*/(0,jsx_runtime.jsx)("th", {
+            children: "Investment Value"
+          }), /*#__PURE__*/(0,jsx_runtime.jsx)("th", {
+            children: "Interest (Year)"
+          }), /*#__PURE__*/(0,jsx_runtime.jsx)("th", {
+            children: "Total Interest"
+          }), /*#__PURE__*/(0,jsx_runtime.jsx)("th", {
+            children: "Invested Capital"
+          })]
+        })
+      }), /*#__PURE__*/(0,jsx_runtime.jsx)("tbody", {
+        children: resultsData.map(function (yearData) {
+          var totalInterest = yearData.valueEndOfYear - yearData.annualInvestment * yearData.year - initialInvestment;
+          var totalAmountInvested = yearData.valueEndOfYear - totalInterest;
+          return /*#__PURE__*/(0,jsx_runtime.jsxs)("tr", {
+            children: [/*#__PURE__*/(0,jsx_runtime.jsx)("td", {
+              children: yearData.year
+            }), /*#__PURE__*/(0,jsx_runtime.jsx)("td", {
+              children: formatter.format(yearData.valueEndOfYear)
+            }), /*#__PURE__*/(0,jsx_runtime.jsx)("td", {
+              children: formatter.format(yearData.interest)
+            }), /*#__PURE__*/(0,jsx_runtime.jsx)("td", {
+              children: formatter.format(totalInterest)
+            }), /*#__PURE__*/(0,jsx_runtime.jsx)("td", {
+              children: formatter.format(totalAmountInvested)
+            })]
+          }, yearData.year);
+        })
+      })]
+    })
+  });
 }
 ;// CONCATENATED MODULE: ./src/components/App.jsx
+function App_typeof(o) { "@babel/helpers - typeof"; return App_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, App_typeof(o); }
+function App_ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function App_objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? App_ownKeys(Object(t), !0).forEach(function (r) { App_defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : App_ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function App_defineProperty(obj, key, value) { key = App_toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function App_toPropertyKey(t) { var i = App_toPrimitive(t, "string"); return "symbol" == App_typeof(i) ? i : String(i); }
+function App_toPrimitive(t, r) { if ("object" != App_typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != App_typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
 
 
 var App = function App() {
-  return /*#__PURE__*/react.createElement(react.Fragment, null, /*#__PURE__*/react.createElement(Header, null));
+  var _useState = (0,react.useState)({
+      initialInvestment: 10000,
+      annualInvestment: 1200,
+      expectedReturn: 6,
+      duration: 10
+    }),
+    _useState2 = _slicedToArray(_useState, 2),
+    userInput = _useState2[0],
+    setUserInput = _useState2[1];
+  var inputIsValid = userInput.duration >= 1;
+  function handleChange(inputIdentifier, newValue) {
+    setUserInput(function (prevUserInput) {
+      return App_objectSpread(App_objectSpread({}, prevUserInput), {}, App_defineProperty({}, inputIdentifier, +newValue));
+    });
+  }
+  return /*#__PURE__*/(0,jsx_runtime.jsxs)(jsx_runtime.Fragment, {
+    children: [/*#__PURE__*/(0,jsx_runtime.jsx)(Header, {}), /*#__PURE__*/(0,jsx_runtime.jsxs)(Main, {
+      children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(Section, {
+        id: "user-input",
+        children: [/*#__PURE__*/(0,jsx_runtime.jsxs)(UList, {
+          className: "input-group",
+          children: [/*#__PURE__*/(0,jsx_runtime.jsx)(Input, {
+            userInput: userInput,
+            label: "Initial Investment",
+            onChange: handleChange,
+            identifier: "initialInvestment",
+            type: "number",
+            required: true
+          }), /*#__PURE__*/(0,jsx_runtime.jsx)(Input, {
+            userInput: userInput,
+            label: "Annual Investment",
+            onChange: handleChange,
+            identifier: "annualInvestment",
+            type: "number",
+            required: true
+          })]
+        }), /*#__PURE__*/(0,jsx_runtime.jsxs)(UList, {
+          className: "input-group",
+          children: [/*#__PURE__*/(0,jsx_runtime.jsx)(Input, {
+            userInput: userInput,
+            label: "Expected Return",
+            onChange: handleChange,
+            identifier: "expectedReturn",
+            type: "number",
+            required: true
+          }), /*#__PURE__*/(0,jsx_runtime.jsx)(Input, {
+            userInput: userInput,
+            label: "Duration",
+            onChange: handleChange,
+            identifier: "duration",
+            type: "number",
+            required: true
+          })]
+        })]
+      }), /*#__PURE__*/(0,jsx_runtime.jsxs)(Section, {
+        children: [!inputIsValid && /*#__PURE__*/(0,jsx_runtime.jsx)("p", {
+          className: "center",
+          children: "Please enter a duration greater than zero."
+        }), inputIsValid && /*#__PURE__*/(0,jsx_runtime.jsx)(Results, {
+          input: userInput
+        })]
+      })]
+    })]
+  });
 };
 /* harmony default export */ const components_App = (App);
 ;// CONCATENATED MODULE: ./src/index.js
+
 
 
 
@@ -563,7 +859,9 @@ if (true) {
 } else {}
 var domNode = document.querySelector("#root");
 var root = (0,client/* createRoot */.s)(domNode);
-root.render( /*#__PURE__*/react.createElement(react.StrictMode, null, /*#__PURE__*/react.createElement(components_App, null)));
+root.render( /*#__PURE__*/(0,jsx_runtime.jsx)(react.StrictMode, {
+  children: /*#__PURE__*/(0,jsx_runtime.jsx)(components_App, {})
+}));
 
 // Warning: You are calling ReactDOMClient.createRoot() on a container that has already been passed to createRoot() before. 
 // Instead, call root.render() on the existing root instead if you want to update it.
